@@ -5,13 +5,13 @@ import { Shop } from "../../contexts/ShopProvider";
 const CartWidget = () => {
   //Vamos a consumir de context par actualizar el carrito
 
-  const { products } = useContext(Shop);
+  const { countCart } = useContext(Shop);
 
   return (
     <>
       <HiShoppingCart style={{ height: 35, width: 35, color: "blue" }} />
       <span style={{ height: 35, width: 35, color: "blue" }}>
-        {products.length}
+        {countCart()}
       </span>
     </>
   );

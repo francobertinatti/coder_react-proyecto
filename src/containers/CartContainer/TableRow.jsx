@@ -6,7 +6,10 @@ const tableRow = (props) => {
   return (
     <tr>
       <th scope="row">{props.product.id}</th>
-      <td className="text-center">
+      <td
+        className="d-flex align-items-center text-center"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <img
           src={props.product.image}
           className="img-thumbnail"

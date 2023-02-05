@@ -6,10 +6,10 @@ const Cart = () => {
   const { products } = useContext(Shop);
 
   return (
-    <table class="table table-success table-striped">
-      <thead>
+    <table class="table p-5">
+      <thead class="table-dark">
         <tr>
-          <th scope="col">id</th>
+          <th scope="col">ID</th>
           <th scope="col">Image</th>
           <th scope="col">title</th>
           <th scope="col">price</th>

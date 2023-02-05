@@ -25,7 +25,8 @@ const ItemDetail = ({ detail }) => {
             {/* product gallery */}
             <div className="col-sm-12 col-xl-8 col-lg-12 pe-lg-0 pt-lg-4">
               <img
-                className="rounded mx-auto d-block  img-fluid"
+                className="d-flex align-items-center text-center"
+                style={{ display: "flex", justifyContent: "center" }}
                 src={detail.image}
                 alt="detail"
               />
