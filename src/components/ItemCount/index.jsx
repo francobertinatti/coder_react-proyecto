@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ItemCount = ({ onAdd, stock, initial }) => {
   const [count, setCount] = useState(initial);
@@ -34,15 +34,15 @@ const ItemCount = ({ onAdd, stock, initial }) => {
     //     </div>
     //   </div>
     // </div>
-    <div className='d-flex align-items-center'>
-      <button className='btn btn-secondary m-2' onClick={onDecrement}>
+    <div className="d-flex align-items-center">
+      <button className="btn btn-secondary m-2" onClick={onDecrement}>
         -
       </button>
-      <span className='mx-2 m-2'>{count}</span>
-      <button className='btn btn-secondary m-2' onClick={onPlus}>
+      <span className="mx-2 m-2">{count}</span>
+      <button className="btn btn-secondary m-2" onClick={onPlus}>
         +
       </button>
-      <button className='btn btn-success ml-2' onClick={() => onAdd(count)}>
+      <button className="btn btn-success ml-2" onClick={() => onAdd(count)}>
         Añadir al carrito
       </button>
     </div>

@@ -3,20 +3,22 @@ import { createContext } from "react";
 
 export const Shop = createContext();
 
+//HOC o high order component
 const ShopProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
   const addProduct = (product) => {
-    //! const addProduct
     const isInCart = isProductInCart(product.id);
     if (isInCart) {
+      //Hacer algo
+      //Primero vamos a encontra el producto repetido
       const productoRepetido = products.find(
         (element) => element.id === product.id
       );
       productoRepetido.quantity += product.quantity;
       setProducts([...products]);
     } else {
-      setProducts([...products, product]); //no se puede utilizar .push porquetenemos que trabajar con una copia del valor original
+      setProducts([...products, product]);
     }
   };
 
