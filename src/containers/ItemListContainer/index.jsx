@@ -3,10 +3,16 @@ import { useParams } from "react-router-dom";
 import ItemList from "../../components/ItemList";
 import { db } from "../../firebase/config";
 import { collection, getDocs, query, where } from "firebase/firestore";
+// import saveFromJSONToFirebase from "../../services/saveFromJSONToFirebase";
 
 const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
+
+  // TODO: CARGAMOS PRODUCTOS DIRECTAMENTE DESDE EL JSON, TENEMOS QUE TENER CUIDADO PORQUE EN CADA RENDER, SE CARGAN NUEVOS PRODUCTOS. ENTONCES DEJAR COMENTADO PARA NO DUPLICAR PRODUCTOS
+  // useEffect(() => {
+  //   saveFromJSONToFirebase();
+  // }, []);
 
   //Este effect se ejecuta cuando se monta el componente
   useEffect(() => {

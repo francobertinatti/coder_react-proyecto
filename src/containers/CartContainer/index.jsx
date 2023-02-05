@@ -6,9 +6,9 @@ const Cart = () => {
   const { products } = useContext(Shop);
 
   return (
-    <div className="p-3">
-      <table class="table table-hover">
-        <thead class="table-dark">
+    <div classNameName="p-3">
+      <table className="table table-hover">
+        <thead className="table-dark">
           <tr>
             <th scope="col">ID</th>
             <th scope="col"></th>
