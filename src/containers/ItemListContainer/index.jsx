@@ -6,12 +6,11 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
-
-  //Lo primero es capturar la categoría que quiero filtrar
   const { categoryId } = useParams();
 
   //Este effect se ejecuta cuando se monta el componente
   useEffect(() => {
+    //Aqui estamos consumiendo multiples documentos de FIRESTORE
     const getProducts = async () => {
       let querySnapshot;
       if (categoryId) {
