@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
         setFilteredProducts(data);
       })
       .catch((err) => {
-        alert('Hubo un error al cargar los productos');
+        alert("Hubo un error al cargar los productos");
       });
   }, []);
 
   const handleSearch = (e) => {
-    setSearchTerm(e.target.value || '');
+    setSearchTerm(e.target.value || "");
   };
 
   useEffect(() => {
@@ -33,7 +33,11 @@ const Search = () => {
 
   return (
     <div>
-      <input type='text' placeholder='Search product by title' onChange={handleSearch} />
+      <input
+        type="text"
+        placeholder="Search product by title"
+        onChange={handleSearch}
+      />
       <ul>
         {filteredProducts.map((product) => (
           <li key={product.id}>{product.title}</li>

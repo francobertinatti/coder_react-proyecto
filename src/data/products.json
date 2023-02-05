@@ -1,0 +1,195 @@
+[
+  {
+    "id": 13,
+    "category": "motor",
+    "price": 500,
+    "image": "../../public/Assets/id_13_kit de mejora de motor para motocicleta.png",
+    "title": "kit de mejora de motor para motocicleta",
+    "stock": 5,
+    "description": "Este kit de mejora de motor para motocicleta está diseñado para mejorar el rendimiento y la potencia de tu moto. Incluye piezas de alta calidad y fácil instalación."
+  },
+
+  {
+    "id": 14,
+    "category": "motor",
+    "price": 300,
+    "image": "../../public/Assets",
+    "title": "filtro de aire de alto flujo para motocicleta",
+    "stock": 10,
+    "description": "Este filtro de aire de alto flujo para motocicleta mejora la entrada de aire en el motor para una mayor eficiencia y potencia. Fácil de instalar y mantener."
+  },
+
+  {
+    "id": 15,
+    "category": "motor",
+    "price": 250,
+    "image": "../../public/Assets",
+    "title": "escape de alto rendimiento para motocicleta",
+    "stock": 7,
+    "description": "Este escape de alto rendimiento para motocicleta está diseñado para aumentar la potencia y mejorar el sonido de tu moto. Fabricado con materiales de alta calidad y fácil de instalar."
+  },
+
+  {
+    "id": 16,
+    "category": "transmision",
+    "price": 350,
+    "image": "../../public/Assets/id_16_kit de mejora de transmisión para motocicleta.png",
+    "title": "kit de mejora de transmisión para motocicleta",
+    "stock": 6,
+    "description": "Este kit de mejora de transmisión para motocicleta mejorará la suavidad y la eficiencia de la transmisión de tu moto. Incluye piezas de alta calidad y fácil instalación."
+  },
+  {
+    "id": 17,
+    "category": "transmision",
+    "price": 200,
+    "image": "../../public/Assets",
+    "title": "corona y piñón de alto rendimiento para motocicleta",
+    "stock": 9,
+    "description": "Mejora la potencia y el rendimiento de tu motocicleta con esta corona y piñón de alto rendimiento. Fabricado con materiales de alta calidad para un rendimiento duradero y fiable. Ajuste fácil y seguro con garantía de satisfacción."
+  },
+  {
+    "id": 18,
+    "category": "transmision",
+    "price": 150,
+    "image": "../../public/Assets",
+    "title": "kit de cadena de transmisión para motocicleta",
+    "stock": 12,
+    "description": "Mantén tu transmisión suave y eficiente con este kit de cadena de transmisión. Incluye todas las herramientas necesarias para una fácil instalación y se ajusta a una amplia gama de modelos de motocicletas. Con una construcción duradera para un rendimiento sostenible."
+  },
+  {
+    "id": 19,
+    "category": "suspension",
+    "price": 450,
+    "image": "../../public/Assets/id_19_kit de mejora de suspensión para motocicleta.png",
+    "title": "kit de mejora de suspensión para motocicleta",
+    "description": "Este kit de mejora de suspensión para motocicleta incluye amortiguadores de alta calidad y piezas de montaje para mejorar la maniobrabilidad y la comodidad en la conducción de tu moto.",
+    "stock": 4
+  },
+  {
+    "id": 20,
+    "category": "suspension",
+    "price": 300,
+    "image": "../../public/Assets",
+    "title": "amortiguador de alto rendimiento para motocicleta",
+    "description": "Este amortiguador de alto rendimiento para motocicleta está diseñado para proporcionar una mejor absorción de impactos y una conducción más suave en carreteras con mal estado.",
+    "stock": 7
+  },
+  {
+    "id": 21,
+    "category": "suspension",
+    "price": 250,
+    "image": "../../public/Assets",
+    "title": "kit de horquilla de mejora para motocicleta",
+    "description": "Este kit de mejora de horquilla para motocicleta incluye piezas de alta calidad y fácil instalación para mejorar la estabilidad y la seguridad en la conducción de tu moto.",
+    "stock": 6
+  },
+  {
+    "id": 22,
+    "category": "neumaticos",
+    "price": 150,
+    "image": "../../public/Assets/id_22_juego de neumáticos de alto rendimiento para motocicleta.png",
+    "title": "juego de neumáticos de alto rendimiento para motocicleta",
+    "description": "Este juego de neumáticos de alto rendimiento para motocicleta está diseñado para ofrecer una excelente tracción y una mayor estabilidad en carreteras secas y mojadas.",
+    "stock": 8
+  },
+  {
+    "id": 23,
+    "category": "neumaticos",
+    "price": 100,
+    "image": "../../public/Assets",
+    "title": "juego de neumáticos de uso diario para motocicleta",
+    "stock": 10,
+    "description": "Este juego de neumáticos de uso diario para motocicletas es el compañero perfecto para tus aventuras cotidianas. Con su diseño resistente y duradero, tendrás la seguridad que necesitas para disfrutar al máximo de tu motocicleta en cualquier superficie. Además, su precio asequible lo hace ideal para aquellos que buscan una opción económica sin renunciar a la calidad."
+  },
+  {
+    "id": 24,
+    "category": "accesorios",
+    "price": 50,
+    "image":"../../public/Assets",
+    "title": "juego de alforjas para motocicleta",
+    "stock": 15,
+    "description": "Este juego de alforjas para motocicletas es la solución perfecta para llevar todo lo necesario en tus viajes en moto. Con su diseño ergonómico y resistente, podrás almacenar todo lo que necesites de forma segura y cómoda. Además, su instalación es muy sencilla y rápida, por lo que estarás listo para salir en un abrir y cerrar de ojos."
+  },
+
+  {
+    "id": 25,
+    "category": "accesorios",
+    "price": 30,
+    "image": "../../public/Assets",
+    "title": "casco de motocicleta",
+    "stock": 20,
+    "description": "Este casco de motocicleta es el compañero perfecto para tus aventuras en moto. Con su diseño aerodinámico y su construcción ligera, te sentirás cómodo y seguro en cualquier situación. Además, cuenta con un sistema de ventilación que te mantendrá fresco en los días más calurosos y con una visera protectora que te protegerá de los elementos."
+  },
+  {
+    "id": 26,
+    "category": "accesorios",
+    "price": 50,
+    "image": "../../public/Assets",
+    "title": "Casco de motocicleta",
+    "stock": 15,
+    "description": "Este casco de motocicleta ofrece una combinación perfecta de seguridad y estilo. Con su construcción ligera y su visera resistente a los rayos UV, este casco es una excelente opción para cualquier motociclista. Además, cuenta con un sistema de ventilación y un forro suave y cómodo para mayor comodidad en la carretera."
+  },
+  {
+    "id": 27,
+    "category": "accesorios",
+    "price": 20,
+    "image": "../../public/Assets",
+    "title": "Guantes para motocicleta",
+    "stock": 20,
+    "description": "Estos guantes para motocicleta ofrecen una protección completa para las manos en la carretera. Con un diseño de malla transpirable y una protección reforzada para los dedos, estos guantes son ideales para cualquier clima. Además, cuentan con un cierre ajustable para un ajuste perfecto en el manillar."
+  },
+  {
+    "id": 28,
+    "category": "accesorios",
+    "price": 40,
+    "image": "../../public/Assets",
+    "title": "Botas para motocicleta",
+    "stock": 12,
+    "description": "Estas botas para motocicleta ofrecen una protección integral para los pies en la carretera. Con una construcción resistente y una suela antideslizante, estas botas son ideales para cualquier clima. Además, cuentan con una parte superior transpirable y un forro acolchado para mayor comodidad durante todo el día."
+  },
+  {
+    "id": 29,
+    "category": "accesorios",
+    "price": 35,
+    "image": "../../public/Assets",
+    "title": "Gafas para motocicleta",
+    "stock": 25,
+    "description": "Estas gafas para motocicleta ofrecen una protección óptima para los ojos en la carretera. Con lentes polarizadas y un marco resistente, estas gafas son ideales para cualquier clima. Además, cuentan con una banda elástica ajustable para un ajuste cómodo durante todo el día."
+  },
+  {
+    "id": 30,
+    "category": "accesorios",
+    "price": 50,
+    "image": "../../public/Assets/id_30_soporte para teléfono móvil para motocicleta.png",
+    "title": "soporte para teléfono móvil para motocicleta",
+    "stock": 12,
+    "description": "Este soporte para teléfono móvil para motocicleta es el compañero perfecto para cualquier viaje en moto. Con una sujeción segura y fácil acceso a su teléfono, nunca más tendrá que preocuparse por perder su dispositivo mientras conduce."
+  },
+  {
+    "id": 31,
+    "category": "accesorios",
+    "price": 35,
+    "image": "../../public/Assets",
+    "title": "soporte de GPS para motocicleta",
+    "stock": 15,
+    "description": "Este soporte de GPS para motocicleta le brinda la información que necesita en el camino. Con una fácil instalación y ajuste, nunca más tendrá que preocuparse por perder su camino mientras conduce."
+  },
+  {
+    "id": 35,
+    "category": "motor",
+    "price": 800,
+    "image": "../../public/Assets",
+    "title": "juego de pistones de alto rendimiento para motocicleta",
+    "stock": 5,
+    "description": "Este juego de pistones de alto rendimiento es ideal para aquellos que buscan mejorar el rendimiento de su motor. Con un diseño optimizado y materiales de alta calidad, estos pistones brindarán una mayor potencia y fiabilidad a su motocicleta."
+  },
+  {
+    "id": 36,
+    "category": "motor",
+    "price": 600,
+    "image": "../../public/Assets",
+    "title": "juego de bujías de alto rendimiento para motocicleta",
+    "stock": 8,
+    "description": "Este juego de bujías de alto rendimiento es perfecto para aquellos que quieren mejorar la eficiencia de combustión de su motor. Con un diseño innovador y materiales de alta calidad, estas bujías asegurarán una ignición más rápida y uniforme, lo que resultará en una mayor potencia y una mayor economía de combustible."
+  }
+]

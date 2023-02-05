@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark  ">
       <div className="container-fluid ">
         <Link className="navbar-brand " to="/">
-          LA ARGENTINA
+          FRC MOTOS
         </Link>
         <button
           /* BOTON HAMBURGUESA */
@@ -25,40 +25,50 @@ const NavBar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
-                to="/category/electronics"
+                to="/category/motor"
                 className="nav-link active"
                 aria-current="page"
               >
-                Electronics
+                Motor
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/category/jewelery"
+                to="/category/transmision"
                 className="nav-link active"
                 aria-current="page"
               >
-                Jewelery
+                Transmision
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/category/men's clothing"
+                to="/category/suspension"
                 className="nav-link active"
                 aria-current="page"
               >
-                Men's clothing
+                Suspension
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/category/women's clothing"
+                to="/category/neumaticos"
                 className="nav-link active"
                 aria-current="page"
               >
-                Women's clothing
+                Neumaticos
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/category/accesorios"
+                className="nav-link active"
+                aria-current="page"
+              >
+                Accesorios
+              </Link>
+            </li>
+
             {/* <li className='nav-item'>
               <Link className='nav-link' to=' '>
                 Link
