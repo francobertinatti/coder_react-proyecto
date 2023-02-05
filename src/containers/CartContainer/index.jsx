@@ -6,23 +6,25 @@ const Cart = () => {
   const { products } = useContext(Shop);
 
   return (
-    <table class="table p-5">
-      <thead class="table-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Image</th>
-          <th scope="col">title</th>
-          <th scope="col">price</th>
-          <th scope="col">quantity</th>
-          <th scope="col">remove</th>
-        </tr>
-      </thead>
-      <tbody>
-        {products.map((product) => {
-          return <TableRow key={product.id} product={product} />;
-        })}
-      </tbody>
-    </table>
+    <div className="p-3">
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col"></th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Quitar</th>
+          </tr>
+        </thead>
+        <tbody>
+          {products.map((product) => {
+            return <TableRow key={product.id} product={product} />;
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

@@ -5,18 +5,24 @@ import { AiOutlineShopping } from "react-icons/ai";
 
 const Item = ({ product }) => {
   return (
-    <div className="col text-center ">
-      <div className="card h-100">
+    <div className="text-center ">
+      <div className="card h-100 ">
         <img
           src={product.image}
-          className="card-img-top img-fluid"
+          className="card-img-top img-fluid max-w-100 mx-auto d-block"
+          style={{ objectFit: "contain", height: "400px", maxWidth: "100%" }}
           alt={`id-${product.id}`}
         />
 
-        <div className="card-body d-flex flex-column m-3 justify-content-end">
-          <h2 className="card-title ">{product.title}</h2>
-          <h5 className="card-text">${product.price}</h5>
+        <div className="card-body d-flex flex-column align-items-center text-justify">
+          <h3
+            className="card-title align-self-start "
+            style={{ alignSelf: "flex-start" }}
+          >
+            {product.title}
+          </h3>
         </div>
+        <h5 className="card-text text-center">${product.price}</h5>
 
         <div className="card-footer ">
           <Link to={`/detail/${product.id}`} className="">
@@ -44,7 +50,7 @@ const Item = ({ product }) => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasRightLabel">
-              Offcanvas right
+              {product.title}
             </h5>
             <button
               type="button"
@@ -53,7 +59,9 @@ const Item = ({ product }) => {
               aria-label="Close"
             ></button>
           </div>
-          <div className="offcanvas-body">...</div>
+          <div className="offcanvas-body">
+            <p>{product.description}</p>
+          </div>
         </div>
       </div>
       {/* Offcanvas right

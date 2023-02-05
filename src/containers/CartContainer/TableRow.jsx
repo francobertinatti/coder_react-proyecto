@@ -12,8 +12,14 @@ const tableRow = (props) => {
       >
         <img
           src={props.product.image}
-          className="img-thumbnail"
+          className="img-fluid img-thumbnail"
           alt="table-row"
+          style={{
+            width: "100px",
+            height: "100px",
+            objectFit: "cover",
+            margin: "0 auto",
+          }}
         />
       </td>
       <td>{props.product.title}</td>

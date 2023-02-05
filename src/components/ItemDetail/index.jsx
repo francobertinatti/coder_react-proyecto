@@ -19,15 +19,20 @@ const ItemDetail = ({ detail }) => {
 
   return (
     <div className="container">
-      <div className="bg-light shadow-lg px-4 py-3 mb-5">
+      <div className="bg-transparent shadow-lg px-3 py-3 mb-3">
         <div className="px-3">
           <div className="row">
             {/* product gallery */}
-            <div className="col-sm-12 col-xl-8 col-lg-12 pe-lg-0 pt-lg-4">
+            <div className="col-sm-12 col-xl-8 col-lg-12 pe-lg-0 pt-lg-4 d-flex justify-content-center">
               <img
-                className="d-flex align-items-center text-center"
-                style={{ display: "flex", justifyContent: "center" }}
                 src={detail.image}
+                className="d-flex align-items-center text-center img-fluid"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "auto",
+                  height: "400px",
+                }}
                 alt="detail"
               />
             </div>
