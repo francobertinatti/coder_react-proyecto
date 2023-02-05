@@ -5,11 +5,13 @@ import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
 import Cart from "./containers/CartContainer";
 import ShopProvider from "./contexts/ShopProvider";
+import CarouselFadeExample from "./components/Carrousel";
 
 function App() {
   return (
     <ShopProvider>
       <BrowserRouter>
+        <CarouselFadeExample />
         <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />

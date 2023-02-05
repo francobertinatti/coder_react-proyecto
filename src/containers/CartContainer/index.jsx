@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { Shop } from "../../contexts/ShopProvider";
-import generateOrderObject from "../../services/generateOrderObject";
+// import generateOrderObject from "../../services/generateOrderObject";
 import TableRow from "./TableRow";
 
 const Cart = () => {
   const { products } = useContext(Shop);
 
   const confirmarCompraCarrito = () => {
-    const order = generateOrderObject({});
+    // const order = generateOrderObject({});
   };
 
   return (
