@@ -4,10 +4,14 @@ import CartWidget from "../CartWidget";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark  ">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
       <div className="container-fluid ">
-        <Link className="navbar-brand " to="/">
-          FRC MOTOS
+        <Link
+          className="navbar-brand font-weight-bold text-warning fst-italic "
+          to="/"
+        >
+          <span className="text-warning">FRC</span>
+          <span className="text-white">MOTOS</span>
         </Link>
         <button
           /* BOTON HAMBURGUESA */

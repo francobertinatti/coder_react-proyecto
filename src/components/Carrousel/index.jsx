@@ -3,13 +3,13 @@ import Carousel from "react-bootstrap/Carousel";
 const styles = {
   caption: {
     color: "white",
-    textShadow: "1px 1px #000",
+    textShadow: "3px 2px #000",
   },
 };
 
 function CarouselFadeExample() {
   return (
-    <Carousel fade className="p-2">
+    <Carousel fade className="p-1">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -18,10 +18,9 @@ function CarouselFadeExample() {
           style={{ height: "250px", objectFit: "cover" }}
         />
         <Carousel.Caption>
-          <h3 style={styles.caption}>First slide label</h3>
-          <p style={styles.caption}>
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-          </p>
+          <h3 style={styles.caption}>
+            Equipa tu moto con los mejores repuestos
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,10 +32,9 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <h3 style={styles.caption}>First slide label</h3>
-          <p style={styles.caption}>
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-          </p>
+          <h3 style={styles.caption}>
+            Manten tu moto en óptimas condiciones en nuestro taller
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -48,10 +46,7 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <h3 style={styles.caption}>First slide label</h3>
-          <p style={styles.caption}>
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-          </p>
+          <h3 style={styles.caption}>Lo que necesitas en un solo lugar</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

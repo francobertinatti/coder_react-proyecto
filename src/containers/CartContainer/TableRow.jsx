@@ -5,7 +5,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 const tableRow = (props) => {
   return (
     <tr>
-      <th scope="row">{props.product.id}</th>
+      <th scope="row ">{props.product.id}</th>
       <td
         className="d-flex align-items-center text-center"
         style={{ display: "flex", justifyContent: "center" }}

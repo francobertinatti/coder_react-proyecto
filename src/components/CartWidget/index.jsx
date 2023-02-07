@@ -9,8 +9,8 @@ const CartWidget = () => {
 
   return (
     <>
-      <HiShoppingCart style={{ height: 35, width: 35, color: "blue" }} />
-      <span style={{ height: 35, width: 35, color: "blue" }}>
+      <HiShoppingCart style={{ height: 35, width: 35, color: "white" }} />
+      <span style={{ height: 35, width: 35, color: "white" }}>
         {countCart()}
       </span>
     </>
