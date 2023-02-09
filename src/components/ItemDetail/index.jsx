@@ -49,7 +49,7 @@ const ItemDetail = ({ detail }) => {
 
                 <aside className="detail-aside p-2">
                   {quantity === 0 ? (
-                    <ItemCount stock={20} initial={1} onAdd={onAdd} /> // ! En el caso de tener stock para hacerlo dinamico stock={detail.stock}
+                    <ItemCount stock={detail.stock} initial={1} onAdd={onAdd} /> // ! En el caso de tener stock para hacerlo dinamico stock={detail.stock}
                   ) : (
                     <button
                       className="btn btn-danger shadow rounded d-block w-100 "

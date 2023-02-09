@@ -1,89 +1,6 @@
-// import React, { useContext, useState } from "react";
-// import { Shop } from "../../contexts/ShopProvider";
-// import generateOrderObject from "../../services/generateOrderObject";
-// import TableRow from "./TableRow";
-// import { Container, Row, Col, Table } from "react-bootstrap";
-// // import ModalCart from "../../components/ModalCart";
-// import { collection, addDoc } from "firebase/firestore";
-// import { db } from "../../firebase/config";
-// import Swal from "sweetalert2";
-
-// const Cart = () => {
-//   const [isLoading, setIsLoading] = useState(false);
-
-//   const { products, total, cleanCart } = useContext(Shop);
-//   // const [formVis, setFormVis] = useState(false);
-
-//   const confirmarCompraCarrito = async () => {
-//     try {
-//       setIsLoading(true);
-
-//       const order = generateOrderObject({
-//         nombre: "juan",
-//         email: "juan@gmail.com",
-//         telefono: "3813300707",
-//         cart: products,
-//         total: total(),
-//       });
-//       // setFormVis(true);
-
-//       console.log(order);
-
-//       //TODO: ALMACENAMOS EN FIREBASE C/EL ID AUTOMATICO + ALERT
-
-//       // Add a new document with a generated id.
-//       const docRef = await addDoc(collection(db, "order"), order);
-//       cleanCart();
-//       Swal.fire("Orden confirmada con ID: ", docRef.id, "success");
-//       setIsLoading(false);
-
-//       //!ACTUALIZACION DE STOCK
-//     } catch (error) {
-//       console.log(error);
-//     } finally {
-//       setIsLoading(false);
-//     }
-//   };
-
-//   return (
-//     <Container>
-//       <Row className="mt-3">
-//         <Col xs={12}>
-//           <Table className="table table-hover">
-//             <thead className="table-dark">
-//               <tr>
-//                 <th scope="col">ID</th>
-//                 <th scope="col"></th>
-//                 <th scope="col">Producto</th>
-//                 <th scope="col">Precio</th>
-//                 <th scope="col">Cantidad</th>
-//                 <th scope="col"></th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {products.map((product) => {
-//                 return <TableRow key={product.id} product={product} />;
-//               })}
-//             </tbody>
-//           </Table>
-//         </Col>
-//       </Row>
-//       <Row>
-//         <Col xs={12} className="text-center m-2">
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// };
-
-// export default Cart;
-
-// //!ORIGINAL------------------------------------
-
 import React, { useContext, useState } from "react";
 import TableRow from "./TableRow";
 import Swal from "sweetalert2";
-
 import generateOrderObject from "../../services/generateOrderObject";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/config";
@@ -120,7 +37,7 @@ const Cart = () => {
       //! Add a new document with a generated id.
       const docRef = await addDoc(collection(db, "orders"), order);
       cleanCart();
-      //TODO: actualizar el stock de los productos existentes.
+      //TODO: actualizar el stock de los productos en la db - updateDoc
       for (const productCart of products) {
         const productRef = doc(db, "products", productCart.id);
 
