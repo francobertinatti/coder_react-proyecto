@@ -7,24 +7,27 @@ import { db } from "../../firebase/config";
 import { doc, updateDoc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import { Shop } from "../../contexts/ShopProvider";
+import FormComp from "../../components/Form";
 
 const Cart = () => {
   const { products, total, cleanCart } = useContext(Shop);
 
-  // const [formVis, setFormVis] = useState(false);
+  const [formVis, setFormVis] = useState(false);
 
   const [loader, setLoader] = useState(false);
 
   console.log(products);
 
-  const confirmPurchase = async () => {
+  const confirmPurchase = async (dataDelFormulario) => {
+    const { nombre, email, telefono } = dataDelFormulario;
+
     try {
       setLoader(true);
 
       const order = generateOrderObject({
-        nombre: "Sebas",
-        email: "sebastian@gmail.com",
-        telefono: "123123123",
+        nombre,
+        email,
+        phone: telefono,
         cart: products,
         total: total(),
       });
@@ -67,6 +70,7 @@ const Cart = () => {
       console.log(error);
     } finally {
       setLoader(false);
+      setFormVis(false);
     }
   };
 
@@ -100,7 +104,10 @@ const Cart = () => {
                   </div>
                 </div>
               ) : (
-                <button class="btn btn-primary mb-3" onClick={confirmPurchase}>
+                <button
+                  class="btn btn-primary mb-3"
+                  onClick={() => setFormVis(true)}
+                >
                   Confirmar compra
                 </button>
               )}
@@ -119,12 +126,14 @@ const Cart = () => {
           </>
         )}
       </div>
-      {/* { formVis ? 
-      <form>
-        <input placeholder='Ingrese el nombre'/>
-      </form>
-      : null
-    } */}
+
+      {formVis ? (
+        <FormComp
+          confirmPurchase={confirmPurchase}
+          formVis={formVis}
+          setFormVis={setFormVis}
+        />
+      ) : null}
     </>
   );
 };
