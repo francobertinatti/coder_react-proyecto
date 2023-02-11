@@ -19,7 +19,8 @@ const Cart = () => {
   console.log(products);
 
   const confirmPurchase = async (dataDelFormulario) => {
-    const { nombre, email, telefono } = dataDelFormulario;
+    console.log(dataDelFormulario);
+    const { nombre, email, phone: telefono } = dataDelFormulario;
 
     try {
       setLoader(true);
@@ -27,7 +28,7 @@ const Cart = () => {
       const order = generateOrderObject({
         nombre,
         email,
-        phone: telefono,
+        telefono,
         cart: products,
         total: total(),
       });
