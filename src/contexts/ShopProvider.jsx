@@ -48,7 +48,13 @@ const ShopProvider = ({ children }) => {
 
   return (
     <Shop.Provider
-      value={{ products, addProduct, countCart, total, cleanCart }}
+      value={{
+        products,
+        addProduct,
+        countCart,
+        total,
+        cleanCart,
+      }}
     >
       {children}
     </Shop.Provider>
