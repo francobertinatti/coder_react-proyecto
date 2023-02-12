@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Proyecto E-Commerce con React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación de e-commerce construida con React, utilizando la librería de Bootstrap para el diseño y componentes, así como también react-icons para agregar iconos a la aplicación. El uso de librerias sweetalert2, entre otros.
 
-## Available Scripts
+El proyecto e-commerce es una aplicación en línea que permite a los usuarios comprar productos y servicios de manera segura y conveniente. Se basa en una plataforma de comercio electrónico, que ofrece una amplia variedad de productos y una experiencia de compra intuitiva.
 
-In the project directory, you can run:
+El proyecto incluye características como una interfaz de usuario amigable, una base de datos en línea para almacenar información de los productos y las compras realizadas.
 
-### `npm start`
+En resumen, el proyecto e-commerce es una solución completa y escalable para cualquier negocio que busque tener una presencia en línea y ofrecer a sus clientes una experiencia de compra en línea satisfactoria.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Interfaz de usuario amigable y fácil de navegar construida con Bootstrap.
+- Desarrollo Responsive.
+- Integración de componentes de Bootstrap para formularios.
+- Uso de la librería react-bs para una experiencia de usuario optimizada.
+- Almacenamiento de datos en una base de datos en Firebase, incluyendo órdenes y una base de datos de productos.
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  Clona este repositorio en tu máquina local.
+2.  Instala las dependencias necesarias ejecutando `npm install` en la línea de comandos en la raíz del proyecto.
+3.  Inicia la aplicación con `npm start`.
 
-### `npm run build`
+## Contribución
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Si deseas contribuir a este proyecto, por favor abre una solicitud de extracción. Todas las contribuciones son bienvenidas y apreciadas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Licencia
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este proyecto está licenciado bajo la licencia [MIT](https://opensource.org/licenses/MIT).
 
-### `npm run eject`
+## Uso
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Una vez instaladas todas las dependencias y se haya iniciado la aplicación, puedes navegar por los diferentes componentes y funcionalidades de la aplicación.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Desde la página principal, puedes ver una lista de productos disponibles y agregarlos a tu carrito de compras. También puedes ver detalles adicionales sobre cada producto haciendo clic en él.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Desde la página de carrito de compras, puedes ver los productos que has seleccionado y realizar una compra. La información sobre la compra será almacenada en la base de datos en Firebase para su posterior revisión.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Consideraciones futuras
 
-## Learn More
+A medida que evolucione el proyecto, planeamos agregar nuevas funcionalidades, como:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Integración de un sistema de pago seguro.
+- Opciones de envío y seguimiento de envíos.
+- Página de perfil de usuario para ver historial de compras y opciones de actualización de información.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Conclusión
 
-### Code Splitting
+Este proyecto de e-commerce en React es una solución completa y fácil de usar para cualquier negocio que busque tener una presencia en línea. Con su interfaz amigable y capacidad de almacenamiento de datos en Firebase, esta aplicación es una opción confiable y escalable para cualquier negocio en crecimiento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribuyentes
 
-### Analyzing the Bundle Size
+Agradecemos a los siguientes contribuyentes por su trabajo en este proyecto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Franco Bertinatti](https://github.com/francobertinatti) - Desarrollador principal y mantenedor del proyecto.
+- [Sebastian Ancavil](https://github.com/spancavil/) - Profesor a cargo.
 
-### Making a Progressive Web App
+## Agradecimientos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Agradecemos a la comunidad de código abierto por sus recursos y herramientas, incluyendo Bootstrap, react-icons y Firebase, que han hecho posible la creación de este proyecto.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Además, agradecemos a todos los usuarios que han probado y proporcionado retroalimentación sobre la aplicación, lo que nos ha ayudado a mejorarla y asegurarnos de que sea fácil de usar.

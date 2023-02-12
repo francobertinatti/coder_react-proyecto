@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import 'bootstrap/dist/js/bootstrap.js';
+import "bootstrap/dist/js/bootstrap.js";
+import ShopProvider from "./contexts/ShopProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
+  <ShopProvider>
     <App />
+  </ShopProvider>
   // </React.StrictMode>
 );
 

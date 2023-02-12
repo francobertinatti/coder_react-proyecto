@@ -77,11 +77,11 @@ const Cart = () => {
 
   return (
     <>
-      <div class="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center">
         {products.length !== 0 ? (
           <>
-            <table class="table table-hover w-75">
-              <thead class="thead-dark">
+            <table className="table table-hover w-75">
+              <thead className="thead-dark">
                 <tr>
                   <th scope="col">ID</th>
                   <th scope="col"></th>
@@ -97,7 +97,7 @@ const Cart = () => {
                 })}
               </tbody>
             </table>
-            <div class="d-flex justify-content-center mt-3">
+            <div className="d-flex justify-content-center mt-3">
               {loader ? (
                 <div className="d-flex justify-content-center m-4">
                   <div className="spinner-border" role="status">
@@ -106,7 +106,7 @@ const Cart = () => {
                 </div>
               ) : (
                 <button
-                  class="btn btn-primary mb-3"
+                  className="btn btn-primary mb-3"
                   onClick={() => setFormVis(true)}
                 >
                   Confirmar compra
@@ -116,10 +116,12 @@ const Cart = () => {
           </>
         ) : (
           <>
-            <h1 class="text-center mt-5">No hay productos en el carrito.</h1>
-            <div class="d-flex justify-content-center mt-3">
-              <button class="btn btn-primary mb-3">
-                <Link class="text-reset text-decoration-none" to="/">
+            <h1 className="text-center mt-5">
+              No hay productos en el carrito.
+            </h1>
+            <div className="d-flex justify-content-center mt-3">
+              <button className="btn btn-primary mb-3">
+                <Link className="text-reset text-decoration-none" to="/">
                   Home
                 </Link>
               </button>
