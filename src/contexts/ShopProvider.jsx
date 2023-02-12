@@ -46,6 +46,11 @@ const ShopProvider = ({ children }) => {
     setProducts([]);
   };
 
+  const removeProduct = (id) => {
+    const productsFiltered = products.filter((product) => product.id !== id);
+    setProducts(productsFiltered);
+  };
+
   return (
     <Shop.Provider
       value={{
@@ -54,6 +59,7 @@ const ShopProvider = ({ children }) => {
         countCart,
         total,
         cleanCart,
+        removeProduct,
       }}
     >
       {children}

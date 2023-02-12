@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { Shop } from "../../contexts/ShopProvider";
 
-const tableRow = (props) => {
+const TableRow = ({ product }) => {
+  const { removeProduct } = useContext(Shop);
   return (
     <tr>
-      <th scope="row ">{props.product.id}</th>
+      <th scope="row ">{product.id}</th>
       <td
         className="d-flex align-items-center text-center"
         style={{ display: "flex", justifyContent: "center" }}
       >
         <img
-          src={props.product.image}
+          src={product.image}
           className="img-fluid img-thumbnail"
           alt="table-row"
           style={{
@@ -22,11 +24,11 @@ const tableRow = (props) => {
           }}
         />
       </td>
-      <td>{props.product.title}</td>
-      <td>{props.product.price}</td>
-      <td>{props.product.quantity}</td>
+      <td>{product.title}</td>
+      <td>{product.price}</td>
+      <td>{product.quantity}</td>
       <td>
-        <button onClick={props.removeProduct}>
+        <button onClick={() => removeProduct(product.id)}>
           <FontAwesomeIcon icon={faTrash} />
         </button>
       </td>
@@ -34,4 +36,4 @@ const tableRow = (props) => {
   );
 };
 
-export default tableRow;
+export default TableRow;
