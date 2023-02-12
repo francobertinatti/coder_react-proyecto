@@ -12,28 +12,6 @@ const ItemCount = ({ onAdd, stock, initial }) => {
   };
 
   return (
-    // <div className='container'>
-    //   <div className='row align-items-center p-2'>
-    //     <div className='col-sm-2'>
-    //       <button type='button' className='btn btn-secondary' onClick={onDecrement}>
-    //         -
-    //       </button>
-    //     </div>
-    //     <div className='col-sm-2'>
-    //       <label className='d-flex justify-content-center'>{count}</label>
-    //     </div>
-    //     <div className='col-sm-2'>
-    //       <button type='button' className='btn btn-secondary' onClick={onPlus}>
-    //         +
-    //       </button>
-    //     </div>
-    //     <div className='col-sm-6'>
-    //       <button type='button' className='btn btn-secondary' onClick={() => onAdd(count)}>
-    //         Añadir Carrito
-    //       </button>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="d-flex align-items-center">
       <button className="btn btn-secondary m-2" onClick={onDecrement}>
         -
@@ -50,35 +28,3 @@ const ItemCount = ({ onAdd, stock, initial }) => {
 };
 
 export default ItemCount;
-
-// ! Mi codigo, funciona
-// const ItemCount = ({onAdd, stock, initial}) => {
-//   const [count, setCount] = useState(1);
-
-//   const sumarItem = () => {
-//     console.log('suma 1');
-//     setCount(count + 1);
-//   };
-//   const restarItem = () => {
-//     console.log('resta 1');
-//     if (count > 1) setCount(count - 1);
-//   };
-
-//   useEffect(() => {
-//     // console.log('se monto el componente');
-//   }, []);
-
-//   return (
-//     <div className='container'>
-//       <div className='row '>
-//         <button onClick={restarItem} className='col'>
-//           -
-//         </button>
-//         <div className='col'>{count}</div>
-//         <button onClick={sumarItem} className='col'>
-//           +
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };

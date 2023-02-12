@@ -52,5 +52,3 @@ function ModalCart() {
 }
 
 export default ModalCart;
-
-//! original----------

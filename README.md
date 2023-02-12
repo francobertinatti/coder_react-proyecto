@@ -16,6 +16,18 @@ En resumen, el proyecto e-commerce es una solución completa y escalable para cu
 - Uso de la librería react-bs para una experiencia de usuario optimizada.
 - Almacenamiento de datos en una base de datos en Firebase, incluyendo órdenes y una base de datos de productos.
 
+## Librerias
+
+1.  Bootstrap: es un marco de diseño de código abierto que se utiliza para desarrollar aplicaciones web y móviles. Bootstrap ofrece componentes prediseñados y un sistema de rejilla que permite una fácil creación de diseños responsivos.
+2.  React-Bootstrap: es una biblioteca de componentes React que utiliza Bootstrap como base. Te permite aprovechar la funcionalidad de Bootstrap en tus aplicaciones React.
+3.  React-Hook-Form: es una biblioteca de formularios para React que permite el manejo de formularios con una sintaxis simple y fácil de entender.
+4.  React-Icons: es una biblioteca de iconos que permite utilizar iconos en tus aplicaciones React.
+5.  React-Modal: es una biblioteca que te permite mostrar modales en tus aplicaciones React.
+6.  React-Router-DOM: es una biblioteca que te permite agregar rutas a tus aplicaciones React.
+7.  Reactstrap: es una biblioteca de componentes React que utiliza Bootstrap como base. Te permite aprovechar la funcionalidad de Bootstrap en tus aplicaciones React.
+8.  SweetAlert2: es una biblioteca que te permite mostrar alertas atractivas y personalizadas en tus aplicaciones.
+9.  SweetAlert2-React-Content: es una biblioteca que te permite utilizar SweetAlert2 en tus aplicaciones React.
+
 ## Instalación
 
 1.  Clona este repositorio en tu máquina local.
